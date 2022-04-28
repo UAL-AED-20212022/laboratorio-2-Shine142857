@@ -110,7 +110,7 @@ class LinkedList:
                 print("Item found")
                 return True
             n = n.ref
-        print("item bot found")
+        print("item not found")
         return False
 
 
@@ -118,16 +118,19 @@ class LinkedList:
         if self.start_node is None:
             print("The list has no element to delete")
             return
+        print("O país",self.start_node.item,"foi eliminado da lista.")
         self.start_node = self.start_node.ref
     
     def delete_at_end(self):
         if self.start_node is None:
-            print("The list has no elemnet to delete")
+            print("The list has no element to delete")
             return
         n = self.start_node
         while n.ref.ref is not None:
             n = n.ref
         n.ref = None
+        
+
 
     def delete_element_by_value(self, x):
         if self.start_node is None:
@@ -143,8 +146,9 @@ class LinkedList:
             n = n.ref
         if n.ref is None:
             print("item not found in the list")
-
         else:
+            print("item found")
+            print("O país",n.ref.item,"foi eliminado da lista.")
             n.ref = n.ref.ref
             
     def reverse_linkedlist(self):
@@ -172,6 +176,7 @@ class LinkedList:
         temp = self.start_node
         for i in range(0, length - n):
             temp = temp.ref
+        print("O país",temp.item,"foi eliminado da lista.")
         return temp.item
 
 

@@ -1,0 +1,2 @@
+Tive de acrescentar um 'print("item found")' no 'metodo delete_element_by_value' para que o meu output fosse igual ao do teste, pois no meu LinkedList o metodo referido não tem este print
+Acrescentei outros prints também em alguns metodos pois se fossem postos no view (fora do metodo) recebo algo do genero '<bound method LinkedList.get_last_node of <models.LinkedList.LinkedList object at 0x0000015FE73CD2B0>>' e não o nome do País.
